@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Build Log</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+</head>
+<body>
+    <div class="container">
+        <ul class="nav nav-tabs">
+          <li><a href="index.html">Summary</a></li>
+          <li><a href="upstream.html">Upstream Tests</a></li>
+          <li><a href="tests.html">Downstream Tests</a></li>
+          <li class="active"><a href="buildlog.html">Build Log</a></li>
+          <li><a href="metadata.html">METADATA.json</a></li>
+          <li><a href="bakery-yaml.html">bakery.yaml</a></li>
+          <li><a href="description.html">Description</a></li>
+        </ul>
+        <pre><h1>Bake Begins!</h1>
+<h3>(1 of 5)  Copy sources</h3>
+<p>$ cp -a /home/travis/build/hash3g/yesevaone/METADATA.json /home/travis/build/hash3g/yesevaone/builds/build</p>
+<p>Error:  License file not copied</p>
+<p>$  cp -a YesevaOne-Regular.ttf.ttx src/YesevaOne-Regular_v2.ttf.ttx src/YesevaOne-Regular_v2.otf.ttx YesevaOne-Regular.ttf.<em>p_r_e_p.ttx YesevaOne-Regular.ttf._p_o_s_t.ttx YesevaOne-Regular.ttf._n_a_m_e.ttx YesevaOne-Regular.ttf._m_a_x_p.ttx YesevaOne-Regular.ttf._l_o_c_a.ttx YesevaOne-Regular.ttf._k_e_r_n.ttx YesevaOne-Regular.ttf._h_m_t_x.ttx YesevaOne-Regular.ttf._h_h_e_a.ttx YesevaOne-Regular.ttf._h_e_a_d.ttx YesevaOne-Regular.ttf._g_l_y_f.ttx YesevaOne-Regular.ttf._g_a_s_p.ttx YesevaOne-Regular.ttf._f_p_g_m.ttx YesevaOne-Regular.ttf._c_v_t.ttx YesevaOne-Regular.ttf._c_m_a_p.ttx YesevaOne-Regular.ttf.O_S_2f_2.ttx YesevaOne-Regular.ttf.GlyphOrder.ttx YesevaOne-Regular.ttf.G_P_O_S</em>.ttx src/YesevaOne-Regular_v2.ttf.<em>p_r_e_p.ttx src/YesevaOne-Regular_v2.ttf._p_o_s_t.ttx src/YesevaOne-Regular_v2.ttf._n_a_m_e.ttx src/YesevaOne-Regular_v2.ttf._m_a_x_p.ttx src/YesevaOne-Regular_v2.ttf._l_o_c_a.ttx src/YesevaOne-Regular_v2.ttf._k_e_r_n.ttx src/YesevaOne-Regular_v2.ttf._h_m_t_x.ttx src/YesevaOne-Regular_v2.ttf._h_h_e_a.ttx src/YesevaOne-Regular_v2.ttf._h_e_a_d.ttx src/YesevaOne-Regular_v2.ttf._g_l_y_f.ttx src/YesevaOne-Regular_v2.ttf._g_a_s_p.ttx src/YesevaOne-Regular_v2.ttf._f_p_g_m.ttx src/YesevaOne-Regular_v2.ttf._c_v_t.ttx src/YesevaOne-Regular_v2.ttf._c_m_a_p.ttx src/YesevaOne-Regular_v2.ttf.O_S_2f_2.ttx src/YesevaOne-Regular_v2.ttf.GlyphOrder.ttx src/YesevaOne-Regular_v2.ttf.G_P_O_S</em>.ttx src/YesevaOne-Regular_v2.otf.<em>p_o_s_t.ttx src/YesevaOne-Regular_v2.otf._n_a_m_e.ttx src/YesevaOne-Regular_v2.otf._m_a_x_p.ttx src/YesevaOne-Regular_v2.otf._k_e_r_n.ttx src/YesevaOne-Regular_v2.otf._h_m_t_x.ttx src/YesevaOne-Regular_v2.otf._h_h_e_a.ttx src/YesevaOne-Regular_v2.otf._h_e_a_d.ttx src/YesevaOne-Regular_v2.otf._c_m_a_p.ttx src/YesevaOne-Regular_v2.otf.O_S_2f_2.ttx src/YesevaOne-Regular_v2.otf.GlyphOrder.ttx src/YesevaOne-Regular_v2.otf.G_S_U_B</em>.ttx src/YesevaOne-Regular_v2.otf.G_P_O_S_.ttx src/YesevaOne-Regular_v2.otf.C_F_F_.ttx /home/travis/build/hash3g/yesevaone/builds/build/sources</p>
+<p>starting pyfontaine process</p>
+<p>$  fontaine --collections subsets --text /home/travis/build/hash3g/yesevaone/builds/build/sources/YesevaOne-Regular_v2.otf.ttx /home/travis/build/hash3g/yesevaone/builds/build/sources/YesevaOne-Regular_v2.ttf.ttx /home/travis/build/hash3g/yesevaone/builds/build/sources/YesevaOne-Regular.ttf.ttx &gt; fontaine.txt</p>
+<p>end of pyfontaine process</p>
+<h3>(2 of 5)  Run upstream tests</h3>
+<p>... bakery_lint.tests.upstream.test_prepolation.FontTestPrepolation.test_font_prepolation_glyph_contours .. ERROR
+... bakery_lint.tests.upstream.test_prepolation.FontTestPrepolation.test_font_prepolation_glyph_points .. ERROR
+... bakery_lint.tests.upstream.test_prepolation.FontTestPrepolation.test_font_test_prepolation_glyph_names .. OK
+... bakery_lint.tests.upstream.test_diacritic.TestDiacritic.test_diacritic_made_as_component .. OK
+... bakery_lint.tests.upstream.test_diacritic.TestDiacritic.test_diacritic_made_as_mark_to_mark .. OK
+... bakery_lint.tests.upstream.test_diacritic.TestDiacritic.test_diacritic_made_as_own_glyphs .. FAIL
+... bakery_lint.tests.upstream.test_check_upstream_sources.ProjectUpstreamTestCase.test_bakery_yaml_exists .. FAIL
+... bakery_lint.tests.upstream.test_check_upstream_sources.ProjectUpstreamTestCase.test_copyright_notices_same_across_family .. OK
+... bakery_lint.tests.upstream.test_check_upstream_sources.ProjectUpstreamTestCase.test_description_html_exists .. FAIL
+... bakery_lint.tests.upstream.test_check_upstream_sources.ProjectUpstreamTestCase.test_fontlog_txt_exists .. FAIL
+... bakery_lint.tests.upstream.test_check_upstream_sources.ProjectUpstreamTestCase.test_metadata_json_exists .. FAIL
+... bakery_lint.tests.upstream.test_check_pyfontaine_subsets_coverage.FontaineTest.test_charset_cyrillic .. FAIL
+... bakery_lint.tests.upstream.test_check_pyfontaine_subsets_coverage.FontaineTest.test_charset_cyrillicext .. FAIL
+... bakery_lint.tests.upstream.test_check_pyfontaine_subsets_coverage.FontaineTest.test_charset_cyrillicmenu .. OK
+... bakery_lint.tests.upstream.test_check_pyfontaine_subsets_coverage.FontaineTest.test_charset_devanagari .. FAIL
+... bakery_lint.tests.upstream.test_check_pyfontaine_subsets_coverage.FontaineTest.test_charset_greek .. FAIL
+... bakery_lint.tests.upstream.test_check_pyfontaine_subsets_coverage.FontaineTest.test_charset_greekext .. FAIL
+... bakery_lint.tests.upstream.test_check_pyfontaine_subsets_coverage.FontaineTest.test_charset_greekmenu .. FAIL
+... bakery_lint.tests.upstream.test_check_pyfontaine_subsets_coverage.FontaineTest.test_charset_latin .. FAIL
+... bakery_lint.tests.upstream.test_check_pyfontaine_subsets_coverage.FontaineTest.test_charset_latinext .. FAIL
+... bakery_lint.tests.upstream.test_check_pyfontaine_subsets_coverage.FontaineTest.test_charset_vietnamese .. FAIL
+... bakery_lint.tests.upstream.test_check_pyfontaine_subsets_coverage.FontaineTest.test_charset_vietnamesemenu .. FAIL
+... bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars.TestGlyphNameDoesNotContainsDisallowedChars.test_glyphname_does_not_contain_disallowed_chars .. FAIL
+... bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle .. FAIL
+$ mv /home/travis/build/hash3g/yesevaone/builds/build/sources/YesevaOne-Regular_v2.otf.ttx /home/travis/build/hash3g/yesevaone/builds/build/sources/YesevaOne-Regular.ttx</p>
+<p>... bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_epar_in_keys .. FAIL
+... bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_os2_in_keys .. OK
+... bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_ttx_doesnt_contain_duplicate_glyphs .. OK
+... bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations.TTX_FontFamilyNamingTest.test_ttx_family_naming_recommendation .. OK
+... bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars.TestGlyphNameDoesNotContainsDisallowedChars.test_glyphname_does_not_contain_disallowed_chars .. FAIL
+... bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle .. FAIL
+$ mv /home/travis/build/hash3g/yesevaone/builds/build/sources/YesevaOne-Regular_v2.ttf.ttx /home/travis/build/hash3g/yesevaone/builds/build/sources/YesevaOne-Regular.ttx</p>
+<p>... bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_epar_in_keys .. FAIL
+... bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_os2_in_keys .. OK
+... bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_ttx_doesnt_contain_duplicate_glyphs .. OK
+... bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations.TTX_FontFamilyNamingTest.test_ttx_family_naming_recommendation .. OK
+... bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars.TestGlyphNameDoesNotContainsDisallowedChars.test_glyphname_does_not_contain_disallowed_chars .. FAIL
+... bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle .. FAIL
+$ mv /home/travis/build/hash3g/yesevaone/builds/build/sources/YesevaOne-Regular.ttf.ttx /home/travis/build/hash3g/yesevaone/builds/build/sources/YesevaOne-Regular.ttx</p>
+<p>... bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_epar_in_keys .. FAIL
+... bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_os2_in_keys .. OK
+... bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_ttx_doesnt_contain_duplicate_glyphs .. OK
+... bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations.TTX_FontFamilyNamingTest.test_ttx_family_naming_recommendation .. OK</p>
+<h3>(3 of 5)  Convert sources to TTF</h3>
+<p>$  ttx -d /home/travis/build/hash3g/yesevaone/builds/build /home/travis/build/hash3g/yesevaone/builds/build/sources/YesevaOne-Regular.ttx</p>
+<p>Compiling "/home/travis/build/hash3g/yesevaone/builds/build/sources/YesevaOne-Regular.ttx" to "/home/travis/build/hash3g/yesevaone/builds/build/YesevaOne-Regular.ttf"...
+Parsing 'GlyphOrder' table...
+Parsing 'head' table...
+Parsing 'hhea' table...
+Parsing 'maxp' table...
+Parsing 'OS/2' table...
+Parsing 'hmtx' table...
+Parsing 'cmap' table...
+Parsing 'fpgm' table...
+Parsing 'prep' table...
+Parsing 'cvt ' table...
+Parsing 'loca' table...
+Parsing 'glyf' table...
+Parsing 'kern' table...
+Parsing 'name' table...
+Parsing 'post' table...
+Parsing 'gasp' table...
+Parsing 'GPOS' table...</p>
+<h3>Subset TTFs (pyftsubset) YesevaOne-Regular.ttf</h3>
+<p>$  pyftsubset /home/travis/build/hash3g/yesevaone/builds/build/YesevaOne-Regular.ttf --unicodes=U+0020,U+0021,U+0022,U+0023,U+0024,U+0025,U+0026,U+0027,U+0028,U+0029,U+002A,U+002B,U+002C,U+002D,U+002E,U+002F,U+0030,U+0031,U+0032,U+0033,U+0034,U+0035,U+0036,U+0037,U+0038,U+0039,U+003A,U+003B,U+003C,U+003D,U+003E,U+003F,U+0040,U+0041,U+0042,U+0043,U+0044,U+0045,U+0046,U+0047,U+0048,U+0049,U+004A,U+004B,U+004C,U+004D,U+004E,U+004F,U+0050,U+0051,U+0052,U+0053,U+0054,U+0055,U+0056,U+0057,U+0058,U+0059,U+005A,U+005B,U+005C,U+005D,U+005E,U+005F,U+0060,U+0061,U+0062,U+0063,U+0064,U+0065,U+0066,U+0067,U+0068,U+0069,U+006A,U+006B,U+006C,U+006D,U+006E,U+006F,U+0070,U+0071,U+0072,U+0073,U+0074,U+0075,U+0076,U+0077,U+0078,U+0079,U+007A,U+007B,U+007C,U+007D,U+007E,U+00A0,U+00A1,U+00A2,U+00A3,U+00A4,U+00A5,U+00A6,U+00A7,U+00A8,U+00A9,U+00AA,U+00AB,U+00AC,U+00AD,U+00AE,U+00AF,U+00B0,U+00B1,U+00B2,U+00B3,U+00B4,U+00B5,U+00B6,U+00B7,U+00B8,U+00B9,U+00BA,U+00BB,U+00BC,U+00BD,U+00BE,U+00BF,U+00C0,U+00C1,U+00C2,U+00C3,U+00C4,U+00C5,U+00C6,U+00C7,U+00C8,U+00C9,U+00CA,U+00CB,U+00CC,U+00CD,U+00CE,U+00CF,U+00D0,U+00D1,U+00D2,U+00D3,U+00D4,U+00D5,U+00D6,U+00D7,U+00D8,U+00D9,U+00DA,U+00DB,U+00DC,U+00DD,U+00DE,U+00DF,U+00E0,U+00E1,U+00E2,U+00E3,U+00E4,U+00E5,U+00E6,U+00E7,U+00E8,U+00E9,U+00EA,U+00EB,U+00EC,U+00ED,U+00EE,U+00EF,U+00F0,U+00F1,U+00F2,U+00F3,U+00F4,U+00F5,U+00F6,U+00F7,U+00F8,U+00F9,U+00FA,U+00FB,U+00FC,U+00FD,U+00FE,U+00FF,U+0131,U+0152,U+0153,U+02C6,U+02DA,U+02DC,U+2013,U+2014,U+2018,U+2019,U+201A,U+201C,U+201D,U+201E,U+2022,U+2039,U+203A,U+2044,U+2074,U+20AC,U+2122,U+2215,U+E0FF,U+EFFD,U+F000 --notdef-outline --name-IDs=* --hinting</p>
+<p>$ mv /home/travis/build/hash3g/yesevaone/builds/build/YesevaOne-Regular.ttf.subset /home/travis/build/hash3g/yesevaone/builds/build/YesevaOne-Regular.latin</p>
+<p>$  pyftsubset /home/travis/build/hash3g/yesevaone/builds/build/YesevaOne-Regular.ttf --unicodes=U+0059,U+0065,U+0073,U+0065,U+0076,U+0061,U+0020,U+004f,U+006e,U+0065 --notdef-outline --name-IDs=* --hinting</p>
+<p>$ mv /home/travis/build/hash3g/yesevaone/builds/build/YesevaOne-Regular.ttf.subset /home/travis/build/hash3g/yesevaone/builds/build/YesevaOne-Regular.menu</p>
+<h3>Test YesevaOne-Regular.ttf</h3>
+<p>... bakery_lint.tests.downstream.test_names_are_ascii_only.CheckNamesAreASCIIOnly.test_check_names_are_ascii_only .. OK
+... bakery_lint.tests.downstream.test_gpos_table_has_kerning_info.CheckGposTableHasKerningInfo.test_gpos_table_has_kerning_info .. OK
+... bakery_lint.tests.downstream.test_gasp_table_value.CheckGaspTableType.test_check_gasp_table_type .. OK
+$ bakery-gasp.py --set=15 /home/travis/build/hash3g/yesevaone/builds/build/YesevaOne-Regular.ttf
+$ mv /home/travis/build/hash3g/yesevaone/builds/build/YesevaOne-Regular.ttf.fix /home/travis/build/hash3g/yesevaone/builds/build/YesevaOne-Regular.ttf
+strippedname:/home/travis/build/hash3g/yesevaone/builds/build/YesevaOne-Regular.ttf
+... bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_composite_glyphs .. OK
+... bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_glyphs .. OK
+... bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_composite_glyphs .. OK
+... bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_glyphs .. OK
+... bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_glyphs .. OK
+... bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_unicode_codepoints .. OK
+... bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_flipped_reference_in_glyphs .. OK
+... bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_anchors .. OK
+... bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_extrema_in_glyphs .. FAIL
+... bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_overlapped_hints .. OK
+... bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_integer_aligned .. OK
+... bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_not_too_far_apart .. OK
+... bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_hints_in_glyphs .. OK
+... bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_points_in_glyphs .. OK
+... bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_referenced_glyphs_are_present .. OK
+... bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_glyph_names .. OK
+... bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_length_instructions .. OK
+... bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_glyph_intersect .. OK
+... bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_open_contours .. OK
+... bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_wrong_direction_in_glyphs .. OK
+... bakery_lint.tests.downstream.test_check_upm_heights_less_120.TestCheckUPMHeightsLess120.test_check_upm_heigths_less_120 .. OK
+... bakery_lint.tests.downstream.test_check_unused_glyph_data.CheckUnusedGlyphData.test_check_unused_glyph_data .. ERROR
+... bakery_lint.tests.downstream.test_check_unencoded_glyph.TestFontUnencodedGlyph.test_font_unencoded_glyphs .. FAIL
+$  bakery-encode-glyphs-fix.py --autofix /home/travis/build/hash3g/yesevaone/builds/build/YesevaOne-Regular.ttf
+$ mv /home/travis/build/hash3g/yesevaone/builds/build/YesevaOne-Regular.ttf.fix /home/travis/build/hash3g/yesevaone/builds/build/YesevaOne-Regular.ttf</p>
+<p>... bakery_lint.tests.downstream.test_check_panose_identification.CheckPanoseIdentification.test_check_panose_identification .. OK
+... bakery_lint.tests.downstream.test_check_os2_width_class.CheckOS2WidthClass.test_check_os2_width_class .. OK
+... bakery_lint.tests.downstream.test_check_no_problematic_formats.CheckNoProblematicFormats.test_check_no_problematic_formats .. OK
+... bakery_lint.tests.downstream.test_check_nbsp_width_matches_sp_width.CheckNbspWidthMatchesSpWidth.test_check_nbsp_width_matches_sp_width .. FAIL
+$  bakery-nbsp-fix.py /home/travis/build/hash3g/yesevaone/builds/build/YesevaOne-Regular.ttf
+spaceWidth is    280
+nbspWidth is     -229
+nbspWidth is now -229
+Nothing to do
+$ mv /home/travis/build/hash3g/yesevaone/builds/build/YesevaOne-Regular.ttf.fix /home/travis/build/hash3g/yesevaone/builds/build/YesevaOne-Regular.ttf
+... bakery_lint.tests.downstream.test_check_names_same_across_platforms.CheckNamesSameAcrossPlatforms.test_check_names_same_across_platforms .. OK
+... bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckStyleNameRecommendation.test_check_stylename_is_under_recommendations .. OK
+... bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFamilyNameRecommendation.test_check_opentype_familyname .. FAIL
+$  bakery-opentype-fix.py /home/travis/build/hash3g/yesevaone/builds/build/YesevaOne-Regular.ttf
+$ mv /home/travis/build/hash3g/yesevaone/builds/build/YesevaOne-Regular.ttf.fix /home/travis/build/hash3g/yesevaone/builds/build/YesevaOne-Regular.ttf
+... bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTStyleNameRecommendation.test_check_opentype_stylename .. OK
+... bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFullNameRecommendation.test_check_opentype_fullname .. OK
+... bakery_lint.tests.downstream.test_check_magic_prep_code.CheckMagicPREPByteCode.test_prep_magic_code .. FAIL
+... bakery_lint.tests.downstream.test_check_license_included.CheckLicenseIncluded.test_license_included_in_font_names .. OK
+... bakery_lint.tests.downstream.test_check_italic_angle_agreement.CheckItalicAngleAgreement.test_check_italic_angle_agreement .. OK
+... bakery_lint.tests.downstream.test_check_hmtx_hhea_max_advance_width_agreement.CheckHmtxHheaMaxAdvanceWidthAgreement.test_check_hmtx_hhea_max_advance_width_agreement .. OK
+... bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_euro .. OK
+... bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_nbsp .. OK
+... bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_space .. OK
+... bakery_lint.tests.downstream.test_check_glyf_table_length.CheckGlyfTableLength.test_check_glyf_table_length .. FAIL
+... bakery_lint.tests.downstream.test_check_full_font_name_begins_with_family_name.CheckFullFontNameBeginsWithFamilyName.test_check_full_font_name_begins_with_family_name .. OK
+... bakery_lint.tests.downstream.test_check_fontname_matches_macstyle.CheckFontNameEqualToMacStyleFlags.test_fontname_is_equal_to_macstyle .. FAIL
+... bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasDsigTable.test_check_font_has_dsig_table .. FAIL
+$ bakery-dsig.py /home/travis/build/hash3g/yesevaone/builds/build/YesevaOne-Regular.ttf
+$ mv /home/travis/build/hash3g/yesevaone/builds/build/YesevaOne-Regular.ttf.fix /home/travis/build/hash3g/yesevaone/builds/build/YesevaOne-Regular.ttf
+... bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasNotKernTable.test_no_kern_table_exists .. OK
+... bakery_lint.tests.downstream.test_check_font_agreements.CheckFsTypeIsNotSet.test_is_fstype_not_set .. OK
+$  bakery-fstype-fix.py --autofix /home/travis/build/hash3g/yesevaone/builds/build/YesevaOne-Regular.ttf
+$ mv /home/travis/build/hash3g/yesevaone/builds/build/YesevaOne-Regular.ttf.fix /home/travis/build/hash3g/yesevaone/builds/build/YesevaOne-Regular.ttf</p>
+<p>... bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_em_is_1000 .. OK
+... bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_file_is_font .. OK
+... bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_font_is_font .. OK
+... bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_latin_file_exists .. OK</p>
+<h3>Optimize TTF YesevaOne-Regular.ttf</h3>
+<p>$  pyftsubset /home/travis/build/hash3g/yesevaone/builds/build/YesevaOne-Regular.ttf * --layout-features=<em> --notdef-outline --name-IDs=</em> --hinting</p>
+<p>[/home/travis/build/hash3g/yesevaone/builds/build]:ls -l 'YesevaOne-Regular.ttf'<em> # look at the size savings of that subset process
+$ ls -l 'YesevaOne-Regular.ttf'</em> # look at the size savings of that subset process</p>
+<p>-rw-rw-r-- 1 travis travis 105152 Sep  9 10:52 YesevaOne-Regular.ttf</p>
+<p>-rw-rw-r-- 1 travis travis 100200 Sep  9 10:52 YesevaOne-Regular.ttf.subset</p>
+<p>$ mv /home/travis/build/hash3g/yesevaone/builds/build/YesevaOne-Regular.ttf.subset /home/travis/build/hash3g/yesevaone/builds/build/YesevaOne-Regular.ttf</p>
+<p>Autohint TTFs (ttfautohint) YesevaOne-Regular.ttf</p>
+<p>[/home/travis/build/hash3g/yesevaone/builds/build]:ttfautohint -l 7 -r 28 -G 50 -x 13 -w "G" /home/travis/build/hash3g/yesevaone/builds/build/YesevaOne-Regular.ttf '/home/travis/build/hash3g/yesevaone/builds/build/YesevaOne-Regular.autohint.ttf'
+$ ttfautohint -l 7 -r 28 -G 50 -x 13 -w "G" /home/travis/build/hash3g/yesevaone/builds/build/YesevaOne-Regular.ttf '/home/travis/build/hash3g/yesevaone/builds/build/YesevaOne-Regular.autohint.ttf'</p>
+<p>/bin/sh: 1: ttfautohint: not found
+Error:  /bin/sh: 1: ttfautohint: not found</p>
+<p>Fatal: Exited with return code 127 </p>
+<p>Error:  TTFAutoHint is not available</p>
+<h3>(4 of 5)  Generate METADATA.json (genmetadata.py)</h3>
+<p>$  genmetadata.py /home/travis/build/hash3g/yesevaone/builds/build</p>
+<p>Created DESCRIPTION.en_us.html with:</p>
+<p>Copyright (c) 2011-2012 by Jovanny Lemonad. All rights reserved.</p>
+
+<p>Designer's name from font is: Jovanny Lemonad</p>
+<p>Original size: 100584
+Gzip size: 46957</p>
+<p>Family Name: Yeseva One</p>
+<p>PS Name: YesevaOne</p>
+<p>Full Name: Yeseva One</p>
+<p>Style: normal</p>
+<p>Weight: 400</p>
+<p>Filename: YesevaOne-Regular.ttf</p>
+<p>Copyright: Copyright (c) 2011-2012, Jovanny Lemonad (lemonad@jovanny.ru), with Reserved Font Name 'Yeseva'</p>
+<p>{
+  "name": "Yeseva One", 
+  "designer": "Jovanny Lemonad", 
+  "license": "OFL", 
+  "visibility": "External", 
+  "category": "Display", 
+  "size": 15436, 
+  "fonts": [
+    {
+      "name": "Yeseva One", 
+      "postScriptName": "YesevaOne", 
+      "fullName": "Yeseva One", 
+      "style": "normal", 
+      "weight": 400, 
+      "filename": "YesevaOne-Regular.ttf", 
+      "copyright": "Copyright (c) 2011-2012, Jovanny Lemonad (lemonad@jovanny.ru), with Reserved Font Name 'Yeseva'"
+    }
+  ], 
+  "subsets": [
+    "latin"
+  ], 
+  "dateAdded": "2011-07-13"
+}</p>
+<h3>(5 of 5)  Run tests for METADATA.json</h3>
+<p>... bakery_lint.tests.metadata_test.MetadataTest.test_description_is_more_than_500b .. FAIL
+... bakery_lint.tests.metadata_test.MetadataTest.test_description_is_valid_html .. FAIL
+... bakery_lint.tests.metadata_test.MetadataTest.test_does_not_familyName_exist_in_daltonmaag_catalogue .. FAIL
+... bakery_lint.tests.metadata_test.MetadataTest.test_does_not_familyName_exist_in_fontbureau_catalogue .. OK
+... bakery_lint.tests.metadata_test.MetadataTest.test_does_not_familyName_exist_in_fontscom_catalogue .. FAIL
+... bakery_lint.tests.metadata_test.MetadataTest.test_does_not_familyName_exist_in_fontshop_catalogue .. FAIL
+... bakery_lint.tests.metadata_test.MetadataTest.test_does_not_familyName_exist_in_fontsmith_catalogue .. OK
+... bakery_lint.tests.metadata_test.MetadataTest.test_does_not_familyName_exist_in_houseind_catalogue .. OK
+... bakery_lint.tests.metadata_test.MetadataTest.test_does_not_familyName_exist_in_myfonts_catalogue .. FAIL
+... bakery_lint.tests.metadata_test.MetadataTest.test_does_not_familyName_exist_in_veer_catalogue .. OK
+... bakery_lint.tests.metadata_test.MetadataTest.test_family_is_listed_in_gwf .. OK
+... bakery_lint.tests.metadata_test.MetadataTest.test_metadata_atleast_latin_menu_subsets_exist .. OK
+... bakery_lint.tests.metadata_test.MetadataTest.test_metadata_designer_exists_in_profiles_csv .. OK
+... bakery_lint.tests.metadata_test.MetadataTest.test_metadata_fonts_items_dicts .. OK
+... bakery_lint.tests.metadata_test.MetadataTest.test_metadata_fonts_key_list .. OK
+... bakery_lint.tests.metadata_test.MetadataTest.test_metadata_fonts_no_dupes .. OK
+... bakery_lint.tests.metadata_test.MetadataTest.test_metadata_has_unique_style_weight_pairs .. OK
+... bakery_lint.tests.metadata_test.MetadataTest.test_metadata_keys .. OK
+... bakery_lint.tests.metadata_test.MetadataTest.test_metadata_license .. OK
+... bakery_lint.tests.metadata_test.MetadataTest.test_metadata_no_unknown_top_keys .. OK
+... bakery_lint.tests.metadata_test.MetadataTest.test_metadata_subsets_key_list .. OK
+... bakery_lint.tests.metadata_test.MetadataTest.test_metadata_top_keys_types .. FAIL
+... bakery_lint.tests.metadata_test.MetadataTest.test_subsets_files_is_font .. FAIL
+... bakery_lint.tests.downstream.test_metadata_font_copyright.CheckMetadataContainsReservedFontName.test_copyright_contains_correct_rfn .. OK
+... bakery_lint.tests.downstream.test_metadata_font_copyright.CheckMetadataContainsReservedFontName.test_copyright_is_consistent_across_family .. OK
+... bakery_lint.tests.downstream.test_metadata_font_copyright.CheckMetadataContainsReservedFontName.test_copyright_matches_pattern .. OK
+... bakery_lint.tests.downstream.test_metadata_font_copyright.CheckMetadataContainsReservedFontName.test_metadata_copyright_size .. OK
+... bakery_lint.tests.downstream.test_metadata_agreements.CheckMetadataAgreements.test_font_name_matches_family .. OK
+... bakery_lint.tests.downstream.test_metadata_agreements.CheckMetadataAgreements.test_metadata_family .. OK
+... bakery_lint.tests.downstream.test_metadata_agreements.CheckMetadataAgreements.test_metadata_family_values_are_all_the_same .. OK
+... bakery_lint.tests.downstream.test_metadata_agreements.CheckMetadataAgreements.test_metadata_filename_matches_postScriptName .. FAIL
+... bakery_lint.tests.downstream.test_metadata_agreements.CheckMetadataAgreements.test_metadata_font_have_regular .. OK
+... bakery_lint.tests.downstream.test_metadata_agreements.CheckMetadataAgreements.test_metadata_fonts_fields_have_fontname .. OK
+... bakery_lint.tests.downstream.test_metadata_agreements.CheckMetadataAgreements.test_metadata_fullname_is_equal_to_internal_font_fullname .. OK
+... bakery_lint.tests.downstream.test_metadata_agreements.CheckMetadataAgreements.test_metadata_fullname_matches_postScriptName .. FAIL
+... bakery_lint.tests.downstream.test_metadata_agreements.CheckMetadataAgreements.test_metadata_postScriptName_matches_ttf_fontname .. OK
+... bakery_lint.tests.downstream.test_metadata_agreements.CheckMetadataAgreements.test_metadata_regular_is_400 .. FAIL
+... bakery_lint.tests.downstream.test_metadata_agreements.CheckMetadataAgreements.test_metadata_regular_is_normal .. FAIL
+... bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalMetrics.test_metrics_ascents_equal_bbox .. FAIL
+$  bakery-vmet-fix.py --autofix /home/travis/build/hash3g/yesevaone/builds/build/YesevaOne-Regular.ttf
+$ mv /home/travis/build/hash3g/yesevaone/builds/build/YesevaOne-Regular.ttf.fix /home/travis/build/hash3g/yesevaone/builds/build/YesevaOne-Regular.ttf</p>
+<p>$  bakery-vmet-fix.py /home/travis/build/hash3g/yesevaone/builds/build/YesevaOne-Regular.ttf
+Parameter              YesevaOne-Regular.ttf  <br />
+ymax                   940                    <br />
+hhea.ascent            940                    <br />
+OS/2.sTypoAscender     940                    <br />
+OS/2.usWinAscent       940                    <br />
+ymin                   -309                   <br />
+hhea.descent           -309                   <br />
+OS/2.sTypoDescender    -309                   <br />
+OS/2.usWinDescent      309                    <br />
+hhea.lineGap           0                      <br />
+OS/2.sTypoLineGap      0                      <br />
+hhea total             1249                   <br />
+typo total             1249                   <br />
+win total              1249                   <br />
+UPM:Heights            1000:1249              <br />
+UPM:Heights %          124 %                    </p>
+<p>... bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalMetrics.test_metrics_descents_equal_bbox .. OK
+... bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalMetrics.test_metrics_linegaps_are_zero .. OK
+... bakery_lint.tests.downstream.test_check_text_files_exist.CheckTextFilesExist.test_copyrighttxt_exists .. FAIL
+... bakery_lint.tests.downstream.test_check_text_files_exist.CheckTextFilesExist.test_description_exists .. OK
+... bakery_lint.tests.downstream.test_check_text_files_exist.CheckTextFilesExist.test_fontlogtxt_exists .. FAIL
+... bakery_lint.tests.downstream.test_check_text_files_exist.CheckTextFilesExist.test_licensetxt_exists .. FAIL
+... bakery_lint.tests.downstream.test_check_subsets_exists.CheckSubsetsExist.test_check_subsets_exists .. FAIL
+... bakery_lint.tests.downstream.test_check_monospace_agreements.CheckMonospaceAgreement.test_check_monospace_agreement .. OK
+... bakery_lint.tests.downstream.test_check_metadata_style_matches_names.CheckItalicStyleMatchesMacStyle.test_check_italic_style_matches_names .. OK
+... bakery_lint.tests.downstream.test_check_metadata_style_matches_names.CheckNormalStyleMatchesMacStyle.test_check_normal_style_matches_names .. OK
+... bakery_lint.tests.downstream.test_check_metadata_matches_nametable.CheckMetadataMatchesNameTable.test_check_metadata_matches_nametable .. OK
+... bakery_lint.tests.downstream.test_check_metadata_fields.CheckMetadataFields.test_check_metadata_fields .. OK
+... bakery_lint.tests.downstream.test_check_menu_contains_proper_glyphs.CheckMenuSubsetContainsProperGlyphs.test_check_menu_contains_proper_glyphs .. OK
+... bakery_lint.tests.downstream.test_check_glyph_consistency.CheckGlyphConsistencyInFamily.test_the_same_encodings_of_glyphs_across_family .. OK
+... bakery_lint.tests.downstream.test_check_glyph_consistency.CheckGlyphConsistencyInFamily.test_the_same_names_of_glyphs_across_family .. OK
+... bakery_lint.tests.downstream.test_check_glyph_consistency.CheckGlyphConsistencyInFamily.test_the_same_number_of_glyphs_across_family .. OK
+... bakery_lint.tests.downstream.test_check_font_name_not_in_camelcase.CheckFontNameNotInCamelCase.test_fontname_not_in_camel_case .. OK
+... bakery_lint.tests.downstream.test_check_files_menu_agreements.CheckFontsMenuAgreements.test_menu_file_agreement .. FAIL
+... bakery_lint.tests.downstream.test_check_familyname_matches_fontnames.CheckFamilyNameMatchesFontNames.test_check_familyname_matches_fontnames .. OK
+... bakery_lint.tests.downstream.test_check_canonical_weights.CheckCanonicalWeights.test_check_canonical_weights .. OK
+... bakery_lint.tests.downstream.test_check_canonical_weights.CheckPostScriptNameMatchesWeight.test_postscriptname_contains_correct_weight .. FAIL
+... bakery_lint.tests.downstream.test_check_canonical_weights.CheckFontWeightSameAsInMetadata.test_font_weight_same_as_in_metadata .. OK
+... bakery_lint.tests.downstream.test_check_canonical_weights.CheckFullNameEqualCanonicalName.test_metadata_contains_current_font .. OK
+... bakery_lint.tests.downstream.test_check_canonical_styles.CheckCanonicalStyles.test_check_canonical_styles .. OK
+... bakery_lint.tests.downstream.test_check_canonical_filenames.CheckCanonicalFilenames.test_check_canonical_filenames .. OK</p></pre>
+    </div>
+</body>
+</html>
